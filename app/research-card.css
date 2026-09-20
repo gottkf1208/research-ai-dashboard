@@ -1,0 +1,31 @@
+.research-card.customizable-card { padding:0; overflow:hidden; }
+.research-card-entry { display:flex; flex:1; width:100%; flex-direction:column; align-items:stretch; padding:19px 23px; text-align:left; }
+.research-card-entry:focus-visible { outline:2px solid #526681; outline-offset:-3px; border-radius:7px; }
+.research-card.has-card-color { background:linear-gradient(125deg,color-mix(in srgb,var(--card-color) 8%,white),color-mix(in srgb,var(--card-color) 23%,white)); border-color:color-mix(in srgb,var(--card-color) 42%,white); }
+.research-card.has-card-color .room-number,.research-card.has-card-color .card-data span { background:#ffffff9c; }
+.research-card.has-card-color .card-full-title { color:#576577; }
+.research-card.has-card-color .card-enter { border-color:#52668126; }
+.instructor-card.research-card { flex-shrink:0; background:linear-gradient(115deg,#fff8fb 0%,#fce6ef 55%,#f5d0e2 100%); border-color:#ecc4d7; min-height:0; margin:0 1px 22px; }
+.instructor-card .research-card-entry { padding:24px 28px; }
+.instructor-card .room-number { width:52px; font-size:12px; color:#895069; background:#ffffffb0; }
+.instructor-card .card-meta,.instructor-card .card-track { color:#885b71; }
+.instructor-card .card-full-title { min-height:0; color:#705367; }
+.instructor-card h2 { color:#56364a; }
+.instructor-card .card-data span { background:#ffffff94; color:#85576e; }
+.instructor-card .card-enter { color:#794c65; border-color:#af718e30; }
+.card-customize { border-top:1px solid #52668115; padding:8px 18px; background:#ffffff7a; }
+.card-color-toggle { display:flex; align-items:center; gap:7px; font-size:12px; color:#66748a; padding:4px 0; }
+.card-current-color { width:12px; height:12px; border:1px solid #7892a455; border-radius:50%; }
+.card-color-panel { display:flex; flex-wrap:wrap; gap:12px; align-items:center; padding:12px 0 6px; }
+.card-color-swatches { display:flex; gap:7px; flex-wrap:wrap; }
+.card-color-swatches button { width:28px; height:28px; border-radius:50%; border:2px solid white; box-shadow:0 0 0 1px #26375120; display:flex; align-items:center; justify-content:center; color:#142c4b; }
+.card-color-swatches button[aria-pressed=true] { outline:2px solid #526681; outline-offset:2px; color:white; }
+.card-custom-color { display:flex; align-items:center; gap:6px; font-size:12px; color:#637187; }
+.card-custom-color input { width:30px; height:28px; padding:1px; border:1px solid #d5dde7; border-radius:4px; cursor:pointer; }
+.card-color-reset { display:flex; align-items:center; gap:4px; font-size:12px; color:#637187; }
+.card-color-hint { margin:0 0 14px; font-size:12px; color:#7c8797; }
+.instructor-notice { display:flex; justify-content:space-between; gap:12px; align-items:center; padding:12px 16px; margin-bottom:16px; background:linear-gradient(110deg,#fff4f8,#f8e3ed); border:1px solid #efd6e1; border-radius:7px; color:#805369; font-size:13px; line-height:1.7; flex-shrink:0; }
+.instructor-notice b { white-space:nowrap; }
+.instructor-room .room-heading>.room-number { background:#f9e5ef; color:#98637b; font-size:12px; width:52px; }
+.mind-sample-caption { font-size:12px; line-height:1.8; margin:13px 0 0; color:#647187; }
+@media(max-width:767px) { .instructor-card .research-card-entry { padding:20px; } .research-card-entry { padding:20px; } .instructor-notice { display:block; } .instructor-notice b { display:block; } }
